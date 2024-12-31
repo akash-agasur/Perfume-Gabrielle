@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&display=swap");
+/* ----Root ---- */
+:root {
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+
+  --Fraunces: "Fraunces", serif;
+  --Montserrat: "Montserrat", serif;
+}
+
+/* ---- ALL Properties ---- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* -----Main---- */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Cream);
+  height: 100vh;
+  /* border-radius: 30px; */
+}
+/* -----Parent----- */
+.parent {
+  display: flex;
+  border-radius: 30px;
+}
+/* -----Left----- */
+.left img {
+  height: 450px;
+  width: 300px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+/* -----Right ----- */
+.right {
+  height: 450px;
+  width: 300px;
+  background-color: var(--White);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding-left: 30px;
+}
+
+/* ---- perfume ---- */
+.right .Perfume {
+  padding-top: 30px;
+  font-family: var(--Montserrat);
+  color: var(--Dark-grayish-blue);
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+.right h1 {
+  font-family: var(--Fraunces);
+  line-height: 30px;
+  padding: 30px 0px;
+}
+
+.right .text {
+  font-family: var(--Montserrat);
+  color: var(--Dark-grayish-blue);
+  padding-bottom: 30px;
+  font-size: 14px;
+}
+.right .prices {
+  padding-bottom: 30px;
+}
+.right .price {
+  font-family: var(--Fraunces);
+  color: var(--Dark-cyan);
+  font-size: 35px;
+  display: inline;
+}
+.right strike {
+  color: var(--Dark-grayish-blue);
+  position: relative;
+  bottom: 8px;
+  left: 20px;
+}
+
+.right button {
+  display: block;
+  padding: 10px 72px;
+  background-color: var(--Dark-cyan);
+  color: var(--White);
+  border-radius: 10px;
+  border: none;
+}
+
+.right button img {
+  margin-right: 10px;
+}
+
+@media (max-width: 375px) {
+  .parent {
+    flex-direction: column;
+  }
+  .left img {
+    height: 350px;
+    width: 300px;
+    margin-top: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0;
+  }
+  .right{
+    border-bottom-left-radius:20px ;
+    border-top-right-radius: 0;
+    margin-top: -4px;
+  }
+
+}
